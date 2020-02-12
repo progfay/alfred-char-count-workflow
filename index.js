@@ -3,10 +3,9 @@ const alfy = require('alfy')
 alfy.output(
   [
     {
-      title: 'item',
-      subtitle: 'sample of alfred workflow template',
+      title: `Characters: ${alfy.input.length}`,
+      subtitle: alfy.input,
       arg: '',
-      icon: { path: './icon.png' }
     }
   ]
 )
